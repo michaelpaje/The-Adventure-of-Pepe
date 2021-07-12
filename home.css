@@ -1,0 +1,86 @@
+html{
+    background: url("background1.png");
+    animation: 10s scroll infinite linear;
+    -webkit-animation: 10s scroll infinite linear;
+    background-size: cover;
+}
+
+.title {
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+
+.btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2px;
+    background-color: rgb(184, 158, 104);
+    border: solid 5px rgb(69, 231, 19);
+    border-radius: 20%;
+    margin-bottom: 30px;
+}
+
+
+@keyframes scroll {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -3000px 0px;
+    }
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    border-radius: 5%;
+    left: 36.5%;
+    top: 35%;
+    width: 400px;
+    height: 100%;
+    overflow: auto;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: rgb(184, 158, 104);
+    margin: auto;
+    padding: 40px;
+    border: 1px solid rgb(69, 231, 19);
+    width: 80%;
+    color: white;
+    font-size: 20px;
+}
+
+/* The Close Button */
+.close {
+    color: #666565;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.char {
+    float: left;
+    position: fixed;
+    margin-left: 70px;
+    margin-top: 150px;
+}
+
+.pe {
+    width: 400px;
+}

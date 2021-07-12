@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pepe Adventure</title>
+    <link rel="stylesheet" href="home.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="char">
+        <img src="pepe.png" class="pe">
+    </div>
+    <audio autoplay loop>
+        <source src="homebg.mp3">
+    </audio>
+    <img src="Home/The-Adventure-of-pepe.png" class="title">
+    <a href="index.html">
+        <img src="Home/Start.png" class="btn">
+    </a>
+
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn" class="btn"><img src="Home/Developers.png"></button>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>The Adventure of Pepe is a infinite runner game, which you
+                jump over objects. The controls are basic. Press space to jump.
+                The game is developed by Michael John Paje & Elijah Rei Ferreria</p>
+        </div>
+    </div>
+
+    <button onclick="window.close()" class="btn"><img src="Home/Quit.png"></button>
+
+
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("myBtn");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

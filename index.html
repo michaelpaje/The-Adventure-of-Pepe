@@ -1,0 +1,46 @@
+<!-- POWERUP, pabilisin background, walang sound hanggat walang interaction  -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pepe Adventure</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body onload="startGame()">
+    <style id="scr">
+        @keyframes scroll {
+            0% {
+                background-position: 0px 0px;
+            }
+            100% {
+                background-position: -3000px 0px;
+            }
+        }
+    </style>
+    <img id="pepe" src="pepe.png" style="display: none;" />
+    <img id="cactus" src="obs/cactus.png" style="display: none;" />
+    <img id="adobo" class="sg" src="obs/coin.png" style="display: none;" />
+    <img id="lechon" class="sg" src="obs/star.png" style="display: none;" />
+    <img id="birdy" src="obs/birdy.png" style="display: none;" />
+    <img id="vol2" src="obs/vol2.png" style="display: none;" />
+    <img id="rock" src="obs/rock.png" style="display: none;" />
+    <img id="vol3.1" src="obs/vol3.1.png" style="display: none;" />
+    <img id="vol3.2" src="obs/vol3.2.png" style="display: none;" />
+    <img id="d3" src="obs/dragon3.png" style="display: none;" />
+    <img id="d1" src="obs/1.png" style="display: none;" />
+    <img id="d2" src="obs/2.png" style="display: none;" />
+    <audio src="sound/coin.mp3" id="audioCOIN"></audio>
+    <audio src="sound/star.mp3" id="audioSTAR"></audio>
+    <audio src="sound/jumpsound.mp3" id="audio"></audio>
+    <audio src="sound/bgsound1.mp3" id="audioBG1"></audio>
+    <audio src="sound/bgsound2.mp3" id="audioBG2"></audio>
+    <audio src="sound/bgsound3.mp3" id="audioBG3"></audio>
+    <audio src="sound/gosound.mp3" id="audioGO"></audio>
+    <script type="text/javascript" src="game.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+html {
+    background-color: black;
+}
+
+.maincon {
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.gocont {
+    padding-bottom: 50px;
+}
+
+
+.goimg {
+    width: 800px;
+    display: block;
+    margin: auto;
+}
+
+.container {
+    display: block;
+    margin: auto;
+    background-color: gray;
+    padding: 50px;
+    border-radius: 10%;
+    width: 300px;
+    height: 300px;
+    padding-top: 50px;
+}
+
+.divider {
+    display: block;
+    margin: auto;
+    background-color: black;
+    border-radius: 10%;
+    padding: 10px;
+    width:200px;
+    margin-top: 30px;
+}
+
+.imgsize {
+    width: 200px;
+    height: 40px;
+    display: block;
+    margin: auto;
+}
